@@ -33,19 +33,28 @@
             text-align: center;
         }
 
-        .clt-list > div{
+        .clt-list>div , .item-link {
             color: rgb(0, 0, 0);
             padding-top: 5px;
             width: 200px;
             height: 35px;
-            margin-top: 10px;
+            margin-top: 8px;
             /* background-color: yellow; */
             background-image: url('./images/menu1.png');
             font-family: '標楷體';
             font-size: 16px;
         }
 
-  
+        .clt-list>div:hover {
+            background-image: url('./images/menu2.png');
+        }
+
+        .container-left-btm {
+            color: black;
+            font-family: '標楷體';
+            font-size: 16px;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -69,18 +78,22 @@
                 </div>
 
                 <div class="clt-list">
-                    <div>吉他社</div>
-                    <div>熱舞社</div>
-                    <div>棒球社</div>
-                    <div>羽球社</div>
-                    <div>足球社</div>
-                    <div>童軍社</div>
+                    <a href="./guitar_history.html" class="item-link" target="myIframe">
+                    <div class="items">吉他社
+                    </div>
+                    </a>
+
+                    <div class="items">熱舞社</div>
+                    <div class="items">棒球社</div>
+                    <div class="items">羽球社</div>
+                    <div class="items">足球社</div>
+                    <div class="items">童軍社</div>
 
                 </div>
             </div>
             <!-- container-btm -->
             <div class="container-left-btm">
-                CLB
+                最近更新日期: 2025/05/23
             </div>
         </div>
         <!-- container right -->
@@ -90,14 +103,16 @@
             </div>
             <!-- container-btm -->
             <div class="container-right-btm">
-                <iframe src="./main.html" frameborder="0"></iframe>
+                <iframe src="./main.html" frameborder="0" name="myIframe">
+
+                </iframe>
             </div>
         </div>
     </div>
 
     <!-- footer -->
     <footer class="footer">
-        footer
+        網頁設計及維護：05 李佶璋
     </footer>
 </body>
 

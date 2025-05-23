@@ -76,6 +76,10 @@ h1 {
     margin: auto;
     border: 1px solid black;
     border-top: 0;
+    font-family: '標楷體';
+    font-size: 16px;
+    color: black;
+    text-align: center;
 }
 
 iframe {
